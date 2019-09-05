@@ -1,0 +1,7 @@
+<div [ngClass]="t.completed == true ? 'is-complete' : 'not-complete'">
+  <p>
+    <input (change)="onToggle(t)" type="checkbox">
+    {{t.title }}
+    <button (click)="onDelete(t)" class="del">X</button>
+  </p>
+</div>
